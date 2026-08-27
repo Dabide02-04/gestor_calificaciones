@@ -14,3 +14,15 @@ def determinar_estado(calificaciones):
         return "Aprobado"
     else:
         return "Reprobado"
+def obtener_nota_mayor(calificaciones):
+    if len(calificaciones) == 0:
+        raise ValueError("La lista no puede estar vacía")
+
+    return max(calificaciones)
+
+
+def obtener_nota_menor(calificaciones):
+    if len(calificaciones) == 0:
+        raise ValueError("La lista no puede estar vacía")
+
+    return min(calificaciones)
