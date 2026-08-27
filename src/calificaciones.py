@@ -7,3 +7,10 @@ def calcular_promedio(calificaciones):
             raise ValueError("Calificación fuera de rango")
 
     return sum(calificaciones) / len(calificaciones)
+def determinar_estado(calificaciones):
+    promedio = calcular_promedio(calificaciones)
+
+    if promedio >= 3.0:
+        return "Aprobado"
+    else:
+        return "Reprobado"
