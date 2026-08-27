@@ -26,3 +26,11 @@ def obtener_nota_menor(calificaciones):
         raise ValueError("La lista no puede estar vacía")
 
     return min(calificaciones)
+    
+def generar_resumen(calificaciones):
+    return {
+        "promedio": calcular_promedio(calificaciones),
+        "nota_mayor": obtener_nota_mayor(calificaciones),
+        "nota_menor": obtener_nota_menor(calificaciones),
+        "estado": determinar_estado(calificaciones)
+    }
